@@ -1,8 +1,7 @@
-const container1 = document.getElementById('container')
-const container2 = document.querySelector('#container')
+const container = document.getElementById('container')
+const pTag = document.createElement('p')
 
-console.log(
-  'This is container1', container1,
-  'This is container2', container2,
-  'These two are identical', container1 === container2
-)
+pTag.style.color = 'red'
+pTag.textContent = `Hey I'm red!`
+
+container.appendChild(pTag)
